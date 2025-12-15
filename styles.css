@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;         
+    box-sizing: border-box;
+}
+
+:root {
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --gray-500: hsl(0, 0%, 42%);
+    --gray-950: hsl(0, 0%, 7%);
+    --shadow-large: 10px 10px 0 0 var(--gray-950);
+
+}
+
+body {
+    font-family: "Figtree", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: clamp(1.25rem, 3vw, 1.5rem);
+    background-color: var(--yellow);
+}
+
+.learningCard {
+    padding: 1rem;
+    width: 100%;
+    max-width: 24rem;
+    text-align: left;
+    border-radius: 16px;
+    border: 1px solid var(--gray-950);
+    background-color: var(--white);
+    box-shadow: var(--shadow-large);
+
+}
+
+.learningCard__image{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+
+.learningCard__category {
+    color: var(--gray-950);
+    background-color: var(--yellow);
+    font-weight: 800;
+    font-size: 0.75rem;
+    margin: 1rem 0 0.75rem 0;
+    width: fit-content;
+    padding: 0.35rem 0.75rem;
+    border-radius: 4px;
+
+}
+
+.learningCard__date {
+    font-size: 0.75rem;
+    color: var(--gray-950);
+    height: fit-content;
+    margin-bottom: 0.75rem
+}
+
+.learningCard__title {
+    font-size: clamp(1.25rem, 4vw, 1.5rem);
+    font-weight: 800;
+    margin: 0.75rem 0;
+    color: var(--gray-950);
+    line-height: 1.25;
+}
+
+.learningCard__title-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.learningCard__title-link:hover, .learningCard__title-link:focus-visible {
+    color: var(--yellow);
+}
+
+.learningCard__description {
+    color: var(--gray-500);
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 1.75rem;
+}
+
+.learningCard__author {
+    display: flex;
+    align-items: center;
+}
+
+.learningCard__author-name {
+    font-weight: 800;
+    font-size: 0.875rem;
+    color: var(--gray-950);
+    margin-left: 1rem;
+}
+
+.learningCard__author-image {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.learningCard__attribution { 
+    font-size: 11px; 
+    text-align: center;
+    margin-block-start: 2rem; 
+}
+.learningCard__attribution-link { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 48rem) {
+    .learningCard {
+        padding: 1.5rem;
+        border-radius: 20px;
+    }
+}
