@@ -18,11 +18,14 @@
   <main>
     <section class="learningCard" aria-labelledby="card-title">
       <img class="learningCard__image" src="./assets/images/illustration-article.svg" alt="Illustration Article">
-      <p class="learningCard__category">
+      <span 
+        class="learningCard__category" 
+        aria-label="Category"
+      >
         Learning
-      </p>
+      </span>
       <p class="learningCard__date">
-        Published 21 Dec 2023
+        Published <time datetime="2023-12-21">21 Dec 2023</time>
       </p>
       <h1 id="card-title" class="learningCard__title">
         <a href="#" class="learningCard__title-link">
@@ -32,10 +35,10 @@
       <p class="learningCard__description">
         These languages are the backbone of every website, defining structure, content, and presentation.
       </p>
-      <div class="learningCard__author">
+      <address class="learningCard__author">
         <img class="learningCard__author-image" src="./assets/images/image-avatar.webp" alt="Greg Hooper Avatar">
         <p class="learningCard__author-name">Greg Hooper</p>
-      </div>
+      </address>
     </section>
   </main>
 <footer>
