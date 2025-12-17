@@ -57,7 +57,6 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 - BEM methodology
 - Accessible markup (WCAG 2.1 AA)
