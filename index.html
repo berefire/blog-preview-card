@@ -1,58 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <meta name="author" content="Berefire">
+  <meta name="description" content="description"
+    content="Blog preview card built with HTML and CSS, showcasing clean semantics, accesiblity, and responsive design.">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="./styles.css" type="text/css">
-  
+  <link rel="stylesheet" href="./css/styles.css" type="text/css">
+
   <title>Frontend Mentor | Blog preview card</title>
 
 </head>
+
 <body>
-  <main>
-    <section class="learningCard" aria-labelledby="card-title">
-      <img class="learningCard__image" src="./assets/images/illustration-article.svg" alt="Illustration Article">
-      <span 
-        class="learningCard__category" 
-        aria-label="Category"
-      >
+  <main class="layout">
+    <section class="blog-card" aria-labelledby="blog-card-title">
+      <div class="blog-card__image-wrapper">
+        <img class="blog-card__image" src="./assets/images/illustration-article.svg" alt="Illustration Article">
+      </div>
+
+      <span class="blog-card__category" aria-label="Category">
         Learning
       </span>
-      <p class="learningCard__date">
+      <p class="blog-card__date">
         Published <time datetime="2023-12-21">21 Dec 2023</time>
       </p>
-      <h1 id="card-title" class="learningCard__title">
-        <a href="#" class="learningCard__title-link">
+      <h1 id="blog-card-title" class="blog-card__title">
+        <a href="#" class="blog-card__title-link">
           HTML & CSS foundations
         </a>
       </h1>
-      <p class="learningCard__description">
+      <p class="blog-card__description">
         These languages are the backbone of every website, defining structure, content, and presentation.
       </p>
-      <address class="learningCard__author">
-        <img class="learningCard__author-image" src="./assets/images/image-avatar.webp" alt="Greg Hooper Avatar">
-        <p class="learningCard__author-name">Greg Hooper</p>
+      <address class="blog-card__author">
+        <img class="blog-card__author-image" src="./assets/images/image-avatar.webp" alt="Greg Hooper Avatar">
+        <p class="blog-card__author-name">Greg Hooper</p>
       </address>
     </section>
   </main>
-<footer>
-  
-  <address class="learningCard__attribution">
-    Challenge by 
-    <a 
-      class="learningCard__attribution-link" 
-      href="https://www.frontendmentor.io?ref=challenge" target="_blank" 
-      rel="noopener noreferrer">
+  <footer>
+
+    <address class="attribution">
+      Challenge by
+      <a class="attribution-link" href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        rel="noopener noreferrer">
         Frontend Mentor.
-    </a>
-    Coded by <a class="learningCard__attribution-link" href="#">Berefire</a>.
-  </address>
-</footer>
+      </a>
+      Coded by <a class="attribution-link" href="#">Berefire</a>.
+    </address>
+  </footer>
 </body>
+
 </html>
