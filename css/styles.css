@@ -44,7 +44,6 @@ textarea {
 
   /* FONTS */
   --figtree--font: "Figtree", sans-serif;
-  --font-size-general: 0.75rem;
   --font-size-type-date: clamp(0.75rem, 0.725rem + 0.125vw, 0.875rem);
   --font-size-description-author: 0.875rem;
   --font-size-description: clamp(0.875rem, 0.85rem + 0.125vw, 1rem);
@@ -109,7 +108,6 @@ body {
   display: block;
   background-color: var(--yellow-color);
   font-weight: 800;
-  font-size: var(--font-size-general);
   font-size: var(--font-size-type-date);
   width: fit-content;
   padding: 0.35rem 0.75rem;
@@ -118,7 +116,6 @@ body {
 
 .blog-card__date {
   display: block;
-  font-size: var(--font-size-general);
   font-size: var(--font-size-type-date);
   height: fit-content;
   margin-block: 1rem;
