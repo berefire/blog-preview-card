@@ -9,50 +9,57 @@
   <meta name="description"
     content="Blog preview card built with HTML and CSS, showcasing clean semantics, accesiblity, and responsive design.">
 
+  <link rel="preload" href="./assets/fonts/Figtree-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin>
+
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="./css/styles.css" type="text/css">
+
+  <link rel="preload" href="./css/main.css" as="style">
+  <link rel="stylesheet" href="./css/main.css" type="text/css">
 
   <title>Frontend Mentor | Blog preview card</title>
 
 </head>
 
-<body>
-  <main class="layout">
-    <section class="blog-card" aria-labelledby="blog-card-title">
-      <div class="blog-card__image-wrapper">
-        <img class="blog-card__image" src="./assets/images/illustration-article.svg" alt="Illustration Article">
+<body class="[ cover ]">
+  <main class="[ page ]">
+    <article class="[ blog-card ] [ box stack ]" aria-labelledby="blog-card-title">
+      <img class="[ blog-card__image ] [ radius-s ]" src="./assets/images/illustration-article.svg" height="201"
+        width="336" alt="Illustration Article">
+
+      <div class="[ stack--s ]">
+        <p class="[ blog-card__category ] [ radius-xs font-bold text-xs ]" aria-label="Category">
+          Learning
+        </p>
+        <p class="[ text-xs ]">
+          Published <time datetime="2023-12-21">21 Dec 2023</time>
+        </p>
+        <h1 id="blog-card-title" class="[ blog-card__title ] [ font-bold ]">
+          <a href="#" class="[ blog-card__link blog-card__link--hovered ]">
+            HTML & CSS foundations
+          </a>
+        </h1>
+        <p class="[ blog-card__description ]">
+          These languages are the backbone of every website, defining structure, content, and presentation.
+        </p>
       </div>
 
-      <span class="blog-card__category" aria-label="Category">
-        Learning
-      </span>
-      <p class="blog-card__date">
-        Published <time datetime="2023-12-21">21 Dec 2023</time>
-      </p>
-      <h1 id="blog-card-title" class="blog-card__title">
-        <a href="#" class="blog-card__title-link">
-          HTML & CSS foundations
-        </a>
-      </h1>
-      <p class="blog-card__description">
-        These languages are the backbone of every website, defining structure, content, and presentation.
-      </p>
-      <address class="blog-card__author">
-        <img class="blog-card__author-image" src="./assets/images/image-avatar.webp" alt="Greg Hooper Avatar">
-        <p class="blog-card__author-name">Greg Hooper</p>
-      </address>
-    </section>
+      <div class="[ blog-card__author ]" role="contentinfo">
+        <img class="[ blog-card__avatar ]" width="32" height="32" src="./assets/images/image-avatar.webp"
+          alt="Greg Hooper Avatar">
+        <p class="[ blog-card__authorName ] [ font-bold ]">Greg Hooper</p>
+      </div>
+    </article>
   </main>
-  <footer>
-
-    <address class="attribution">
+  <footer class="[ text-center ]">
+    <div class="[ attribution ]">
       Challenge by
-      <a class="attribution-link" href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        rel="noopener noreferrer">
+      <a class="[ link ]" href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer">
         Frontend Mentor.
       </a>
-      Coded by <a class="attribution-link" href="#">Berefire</a>.
-    </address>
+      <address>
+        Coded by <a class="[ link ]" href="#">Berefire</a>.
+      </address>
+    </div>
   </footer>
 </body>
 

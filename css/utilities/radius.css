@@ -1,0 +1,7 @@
+.radius-xs {
+    border-radius: var(--radius-xs);
+}
+
+.radius-s {
+    border-radius: var(--radius-s);
+}
