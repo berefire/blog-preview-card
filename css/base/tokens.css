@@ -5,6 +5,7 @@
     --color-text-description: hsl(0, 0%, 42%);
     --color-text-title: hsl(0, 0%, 7%);
     --color-link: hsl(228, 45%, 44%);
+    --color-focus: #0b5fff;
 
     /* Spacing scale */
     --space-3xs: 0.25rem;   /* 4px */
