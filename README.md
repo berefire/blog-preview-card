@@ -57,8 +57,8 @@ Users should be able to:
 
 ### 📸Screenshot
 
-| _Mobile View (372x914)_                         | _Desktop View (1024x914)_                        |
-| ----------------------------------------------- | ------------------------------------------------ |
+| _Mobile View (372x914)_                         | _Desktop View (1024x914)_                         |
+| ----------------------------------------------- | ------------------------------------------------- |
 | ![Mobile view](./assets/screenshots/mobile.png) | ![Desktop view](./assets/screenshots/desktop.png) |
 
 | _Hover State (1024x914)_                       |
